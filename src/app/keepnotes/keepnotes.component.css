@@ -1,0 +1,19 @@
+
+
+.button
+{
+  gap: 20px;
+}
+.title
+{
+ border:0px;
+ outline: 0px;
+}
+
+.action
+{
+  padding: 0px 20px 18px;
+  button {
+    flex:1;
+  }
+}

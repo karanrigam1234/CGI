@@ -1,0 +1,31 @@
+<div mat-dialog-title>
+  <h2>Add Your Notes Here</h2>
+</div>
+<form [formGroup]="notesForm">
+<div mat-dialog-content class="container">
+
+  <mat-card class="example-card" class="card" *ngIf="isCarsVisible">
+    <mat-card-header>
+
+      <mat-card-title><input type="text" class=" title" name="title" placeholder="Enter Title" formControlName="title"></mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <textarea name="addtxt" id="addtxt" cols="30" rows="10" placeholder="enter tour notes here" formControlName="notes"></textarea>
+      <p></p>
+      <mat-divider></mat-divider>
+    </mat-card-content>
+
+    <mat-card-footer>
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </mat-card-footer>
+  </mat-card>
+
+</div>
+<div mat-dialog-action class="action">
+  <button mat-raised-button class="button" color="primary" (click)="onSubmit()" >save</button>
+  <button mat-raised-button class="button" (click)="close()">Cancel</button>
+</div>
+</form>
+
+
+
